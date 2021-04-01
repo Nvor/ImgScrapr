@@ -4,9 +4,9 @@ export default function App() {
 
     return (
         <>
-            <h1>I am App Component</h1>
+            <h1>Drop an image!</h1>
             <button onClick={() => {
-                electron.notificationApi.sendNotification('Test Notify!');
+                electron.notificationApi.sendNotification('Task Completed!');
             }}>Notify</button>
         </>
     )
