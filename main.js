@@ -16,6 +16,14 @@ function createWindow() {
         }
     })
 
+    const { default: installExtension, REACT_DEVELOPER_TOOLS } = require('electron-devtools-installer');
+
+    installExtension(REACT_DEVELOPER_TOOLS).then((name) => {
+        console.log(`Added extension: ${name}`);
+    }).catch((err) => {
+        console.log('Error: ', err);
+    });
+
     win.loadFile('index.html')
 }
 
