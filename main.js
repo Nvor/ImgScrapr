@@ -1,5 +1,6 @@
 const { BrowserWindow, app, ipcMain, Notification } = require('electron');
 const path = require('path');
+const { default: installExtension, REACT_DEVELOPER_TOOLS } = require('electron-devtools-installer');
 
 const isDev = !app.isPackaged;
 
@@ -16,21 +17,21 @@ function createWindow() {
         }
     })
 
-    const { default: installExtension, REACT_DEVELOPER_TOOLS } = require('electron-devtools-installer');
-
-    installExtension(REACT_DEVELOPER_TOOLS).then((name) => {
-        console.log(`Added extension: ${name}`);
-    }).catch((err) => {
-        console.log('Error: ', err);
-    });
-
     win.loadFile('index.html')
+}
+
+function toolingSetup() {
+    installExtension(REACT_DEVELOPER_TOOLS).then((name) => {
+        console.log(`Added Extension: ${name}`);
+    }).catch((err) => {
+        console.log('Error ocurred', err);
+    });
 }
 
 if (isDev) {
     require('electron-reload')(__dirname, {
         electron: path.join(__dirname, 'node_modules', '.bin', 'electron')
-    })
+    })    
 }
 
 ipcMain.on('notify', (_, message) => {
@@ -41,4 +42,7 @@ ipcMain.on('notify', (_, message) => {
     }).show();
 })
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+    toolingSetup();
+    createWindow();
+});

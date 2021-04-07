@@ -5,12 +5,12 @@ import Body from './components/Body';
 export default function App() {
 
     return (
-        <div className='container'>
+        <div>
             <Header title='ImgScrapr' />
             <Body />
-            <button onClick={() => {
+            {/* <button onClick={() => {
                 electron.notificationApi.sendNotification('Task Completed!');
-            }}>Notify</button>
+            }}>Notify</button> */}
         </div>
     )
 }
