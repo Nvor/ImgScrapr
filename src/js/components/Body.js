@@ -7,13 +7,13 @@ import './Body.scss'
 const Body = () => {
     return (
         <div className="container">
-            <div className="leftPanel">
+            <div className="uploadPanel">
                 <UploadPanel />
             </div>
-            <div className="rightPanel">
+            <div className="inspectionPanel">
                 <InspectionPanel />
             </div>
-            <div className="bottomPanel">
+            <div className="actionPanel">
                 <ActionPanel />
             </div>
         </div>

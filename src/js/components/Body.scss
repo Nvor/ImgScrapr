@@ -1,20 +1,24 @@
 .container {
     background-color: aquamarine;
-    height: 100vh;
-    width: 100vw;
+    height: 84vh;
+    width: 98vw;
     display: grid;
-    grid-template-rows: 100px 500px 100px;
-    grid-template-columns: 200px 500px;
+    //grid-template-rows: 100px 500px 100px;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: minmax(100px, auto);
 }
 
-.leftPanel {
+.uploadPanel {
     background-color: orchid;
+    grid-row: 1/2;
 }
 
-.rightPanel {
+.inspectionPanel {
     background-color: goldenrod;
+    grid-row: 1/3;
 }
 
-.bottomPanel {
+.actionPanel {
     background-color: gray;
+    grid-row: 2/3;
 }
