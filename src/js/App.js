@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './components/Header';
+import Titlebar from './components/Titlebar';
 import Body from './components/Body';
 
 export default function App() {
 
     return (
         <div>
-            <Header title='ImgScrapr' />
+            <Titlebar title='ImgScrapr' />
             <Body />
             {/* <button onClick={() => {
                 electron.notificationApi.sendNotification('Task Completed!');
