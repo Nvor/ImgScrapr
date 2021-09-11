@@ -1,4 +1,4 @@
-const { ipcRenderer, contextBridge } = require('electron');
+const { ipcRenderer, contextBridge, remote } = require('electron');
 
 contextBridge.exposeInMainWorld('electron', {
     notificationApi: {
@@ -12,5 +12,23 @@ contextBridge.exposeInMainWorld('electron', {
     },
     filesApi: {
 
+    },
+    windowApi: {
+        minimizeWindow() {
+            let window = remote.getCurrentWindow();
+            window.minimize();
+        },
+        maximizeWindow() {
+            let window = remote.getCurrentWindow();
+            if (!window.isMaximized()) {
+                window.maximize();
+            } else {
+                window.unmaximize();
+            }
+        },
+        closeWindow() {
+            let window = remote.getCurrentWindow();
+            window.close();
+        }
     }
 })

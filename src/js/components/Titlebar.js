@@ -1,9 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faWindowMaximize, faMinus  } from "@fortawesome/free-solid-svg-icons";
-
 import './Titlebar.scss'
-
 
 const Titlebar = ({ title }) => {
     return (
@@ -12,15 +10,21 @@ const Titlebar = ({ title }) => {
                 <span>ImgScrapr</span>
             </div>
             <div class="titlebar-buttons">
-                <a>
+                <a onClick={() => 
+                    electron.windowApi.minimizeWindow()
+                }>
                     <FontAwesomeIcon icon={faMinus } />
                 </a>
-                <a>
+                <a onClick={() => 
+                    electron.windowApi.maximizeWindow()
+                }>
                     <FontAwesomeIcon icon={faWindowMaximize } />
                 </a>
-                <a>
+                <a onClick={() => 
+                    electron.windowApi.closeWindow()
+                }>
                     <FontAwesomeIcon icon={faTimes} />
-                </a>             
+                </a>
             </div>
         </div>
     )

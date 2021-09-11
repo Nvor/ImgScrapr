@@ -1,6 +1,6 @@
 .container {
-    background-color: aquamarine;
-    height: 84vh;
+    border: 1px solid aquamarine;
+    height: 93vh;
     width: 98vw;
     display: grid;
     //grid-template-rows: 100px 500px 100px;
@@ -9,16 +9,16 @@
 }
 
 .uploadPanel {
-    background-color: orchid;
+    border: 1px solid orchid;
     grid-row: 1/2;
 }
 
 .inspectionPanel {
-    background-color: goldenrod;
+    border: 1px solid goldenrod;
     grid-row: 1/3;
 }
 
 .actionPanel {
-    background-color: gray;
+    border: 1px solid lime;
     grid-row: 2/3;
 }

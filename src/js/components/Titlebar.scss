@@ -1,22 +1,30 @@
 .titlebar {
     color: white;
+    padding: 10px 0px 0px 0px;
+    height: 30px;
     -webkit-user-select: none;
     -webkit-app-region: drag;
 
     display: flex;
     flex-direction: row;
-    height: 30px;
     
     .titlebar-options {
+        padding: 0px 0px 0px 10px; 
         flex: 6 6 auto;
     }
 
     .titlebar-buttons {
+        -webkit-app-region: no-drag;
         flex: 1 1 1;
 
         a {
             padding: 5px 10px 5px 10px;
             font-size: 15px;
+        }
+
+        a:hover {
+            background-color: lime;
+            color: black;
         }
     }
 }
