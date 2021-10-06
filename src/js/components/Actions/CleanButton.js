@@ -1,8 +1,9 @@
 import React from 'react';
+import './CleanButton.scss';
 
 const CleanButton = () => {
     return (
-        <input type="button" value="CLEAN"></input>
+        <a class="clean-button">Clean Metadata</a>
     )
 }
 
