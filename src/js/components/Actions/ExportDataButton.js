@@ -3,7 +3,7 @@ import './ExportDataButton.scss';
 
 const ExportDataButton = () => {
     return (
-        <a class="export-data-button">Extract Raw Data</a>
+        <a className="export-data-button">Extract Raw Data</a>
     );
 }
 

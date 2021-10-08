@@ -3,7 +3,7 @@ import './CleanButton.scss';
 
 const CleanButton = () => {
     return (
-        <a class="clean-button">Clean Metadata</a>
+        <a className="clean-button">Clean Metadata</a>
     )
 }
 

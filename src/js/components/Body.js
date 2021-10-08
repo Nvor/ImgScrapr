@@ -1,5 +1,5 @@
 import React from 'react'
-import UploadPanel from './UploadPanel';
+import FileDropPanel from './FileDropPanel';
 import InspectionPanel from './InspectionPanel';
 import ActionPanel from './ActionPanel'
 import './Body.scss'
@@ -7,8 +7,8 @@ import './Body.scss'
 const Body = () => {
     return (
         <div className="container">
-            <div className="uploadPanel">
-                <UploadPanel />
+            <div className="fileDropPanel">
+                <FileDropPanel />
             </div>
             <div className="inspectionPanel">
                 <InspectionPanel />

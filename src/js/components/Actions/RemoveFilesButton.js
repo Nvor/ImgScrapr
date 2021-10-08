@@ -3,7 +3,7 @@ import './RemoveFilesButton.scss';
 
 const RemoveFilesButton = () => {
     return (
-        <a class="remove-files-button">Remove Files</a>
+        <a className="remove-files-button">Remove Files</a>
     )
 }
 

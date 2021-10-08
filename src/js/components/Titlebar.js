@@ -5,11 +5,11 @@ import './Titlebar.scss'
 
 const Titlebar = ({ title }) => {
     return (
-        <div class="titlebar">
-            <div class="titlebar-options">
+        <div className="titlebar">
+            <div className="titlebar-options">
                 <span>ImgScrapr</span>
             </div>
-            <div class="titlebar-buttons">
+            <div className="titlebar-buttons">
                 <a onClick={() => 
                     electron.windowApi.minimizeWindow()
                 }>
@@ -29,9 +29,5 @@ const Titlebar = ({ title }) => {
         </div>
     )
 }
-
-// const titlebarStyle = {
-//     color: 'black'
-// }
 
 export default Titlebar
