@@ -1,9 +1,10 @@
 import React from 'react'
+import FileDrop from './FileDrop';
 
 const FileDropPanel = () => {
     return (
         <div>
-            <p>This will be the File Drop area</p>
+            <FileDrop />
         </div>
     )
 }
