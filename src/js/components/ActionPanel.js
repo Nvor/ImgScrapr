@@ -10,4 +10,4 @@ const ActionPanel = () => {
     )
 }
 
-export default ActionPanel
+export default ActionPanel;

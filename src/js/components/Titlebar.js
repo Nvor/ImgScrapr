@@ -30,4 +30,4 @@ const Titlebar = ({ title }) => {
     )
 }
 
-export default Titlebar
+export default Titlebar;

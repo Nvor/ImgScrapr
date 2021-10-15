@@ -3,10 +3,10 @@ import FileDrop from './FileDrop';
 
 const FileDropPanel = () => {
     return (
-        <div>
+        <React.Fragment>
             <FileDrop />
-        </div>
+        </React.Fragment>
     )
 }
 
-export default FileDropPanel
+export default FileDropPanel;

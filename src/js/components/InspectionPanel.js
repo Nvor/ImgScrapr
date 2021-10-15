@@ -17,10 +17,10 @@ const InspectionPanel = () => {
         <div>
             <p>This will be the inspection area</p>
             {MetadataPlaceholders.map((meta) => (
-                <p>{meta.MetadataName} : {meta.MetadataValue}</p>
+                <p key={meta.MetadataName}>{meta.MetadataName} : {meta.MetadataValue}</p>
             ))}
         </div>
     )
 }
 
-export default InspectionPanel
+export default InspectionPanel;

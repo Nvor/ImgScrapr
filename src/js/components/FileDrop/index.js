@@ -3,9 +3,9 @@ import FileDropzone from './FileDropzone';
 
 const FileDrop = () => {
     return (
-        <div>
+        <React.Fragment>
             <FileDropzone />
-        </div>
+        </React.Fragment>
     )
 }
 
