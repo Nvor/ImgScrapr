@@ -3,10 +3,9 @@ import Actions from './Actions';
 
 const ActionPanel = () => {
     return (
-        <div>
-            <p>This will be the action area</p>
+        <React.Fragment>
             <Actions />
-        </div>
+        </React.Fragment>
     )
 }
 

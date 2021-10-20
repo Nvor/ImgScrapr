@@ -1,0 +1,11 @@
+.actions-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        width: 100%;
+        flex: 1 1 auto;
+        font-size: 18px;
+    }
+}
