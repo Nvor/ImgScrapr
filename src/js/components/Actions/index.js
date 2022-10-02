@@ -6,7 +6,7 @@ import './index.scss';
 
 const Actions = () => {
     return (
-        <div class="actions-container">
+        <div className="actions-container">
             <CleanButton />
             <ExportDataButton />
             <RemoveFilesButton />
